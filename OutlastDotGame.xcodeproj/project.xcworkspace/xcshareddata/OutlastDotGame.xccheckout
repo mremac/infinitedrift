@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E47D39F2-41DB-46F9-AA14-B6432FB6E4C8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>OutlastDotGame</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F43221B3BC3F11020A2F8DE83585DA52879BC71A</key>
+		<string>https://bitbucket.org/niazipan/outlast.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>OutlastDotGame.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F43221B3BC3F11020A2F8DE83585DA52879BC71A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/niazipan/outlast.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F43221B3BC3F11020A2F8DE83585DA52879BC71A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F43221B3BC3F11020A2F8DE83585DA52879BC71A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>InfiniteDrift</string>
+		</dict>
+	</array>
+</dict>
+</plist>
