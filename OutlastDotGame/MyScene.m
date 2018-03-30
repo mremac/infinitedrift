@@ -193,6 +193,7 @@
             point = sprite;
             [point setZPosition:background];
             if(sqrtf(powf(point.position.x - hero.position.x, 2) + powf(point.position.y - hero.position.y, 2)) < hero.size.height){
+                NSLog(@"%f", sqrtf(powf(point.position.x - hero.position.x, 2) + powf(point.position.y - hero.position.y, 2)));
                 [self runAction:[SKAction playSoundFileNamed:@"point.wav" waitForCompletion:NO]];
                 self.score ++;
                 SKAction *animatePoint = [SKAction animateWithTextures:getPointAni timePerFrame:0.06];
@@ -266,10 +267,10 @@
                             } else{
                             enemy.isDead = YES;
                             NSLog(@"Cell Death");
-                            enemy.size = CGSizeMake(1.05*sqrtf(enemy.esize)*self.constant/10, 1.05*sqrtf(enemy.esize)*self.constant/10);
-                            SKAction *animateCellDeath = [SKAction animateWithTextures:texturesCellDeath timePerFrame:0.06];
+//                            enemy.size = CGSizeMake(1.05*sqrtf(enemy.esize)*self.constant/10, 1.05*sqrtf(enemy.esize)*self.constant/10);
                             [enemy apoptosis];
                             [self runAction:[SKAction playSoundFileNamed:@"implode.wav" waitForCompletion:NO]];
+                            SKAction *animateCellDeath = [SKAction animateWithTextures:texturesCellDeath timePerFrame:0.06];
                             [enemy runAction:animateCellDeath completion:^(){
                                 [sprite removeFromParent];
                             }];
@@ -329,10 +330,10 @@
     ranx += 0.5*px*self.constant;
     rany = arc4random() % self.yConstant;
     rany += 0.5*py*self.yConstant;
-    for(int someInt = 0;[self checkNestOverlap:CGPointMake(ranx, rany)]; ranx ++){
-        someInt ++;
-        NSLog(@"sprite moved %i pixels to avoid overlap", someInt);
-    }
+//    for(int someInt = 0;[self checkNestOverlap:CGPointMake(ranx, rany)]; ranx ++){
+//        someInt ++;
+//        NSLog(@"sprite moved %i pixels to avoid overlap", someInt);
+//    }
     int shouldGenerate = arc4random() % 1000;
     if(shouldGenerate <= 20){
         if(abs(ranx - hero.position.x) >= 50 || abs(rany - hero.position.y) >= 50){
@@ -476,6 +477,7 @@
     }
     // add static background
     SKSpriteNode *bg = [SKSpriteNode spriteNodeWithImageNamed:@"bgStatic.jpg"];
+    [bg setSize:CGSizeMake(self.frame.size.width, self.frame.size.height)];
     bg.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame));
     [bg setZPosition:-10];
     [self addChild:bg];

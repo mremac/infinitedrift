@@ -52,26 +52,27 @@
     CGRect newButtonPos = CGRectMake(self.view.frame.size.width/2 - beginTheDrift.frame.size.width/2, heightShift, beginTheDrift.frame.size.width, beginTheDrift.frame.size.height);
     [beginTheDrift setFrame:newButtonPos];
     ////
-    self.twButton = [[UIButton alloc]initWithFrame:CGRectMake(117, 161 + heightShift, 34, 33)];
+    self.twButton = [[UIButton alloc]initWithFrame:CGRectMake(CGRectGetMidX(self.view.frame) - 38, 161 + heightShift, 34, 33)];
     [self.twButton setBackgroundImage:[UIImage imageNamed:@"bt_twitter@2x.png"] forState:UIControlStateNormal];
     [self.twButton addTarget:self action:@selector(shareTw:) forControlEvents:UIControlEventTouchDown];
     [self.view addSubview:self.twButton];
-    self.fbButton = [[UIButton alloc]initWithFrame:CGRectMake(168, 161 + heightShift, 34, 33)];
+    self.fbButton = [[UIButton alloc]initWithFrame:CGRectMake(CGRectGetMidX(self.view.frame) + 4, 161 + heightShift, 34, 33)];
     [self.fbButton setBackgroundImage:[UIImage imageNamed:@"bt_fbook.png"] forState:UIControlStateNormal];
     [self.fbButton addTarget:self action:@selector(shareFb:) forControlEvents:UIControlEventTouchDown];
     [self.view addSubview:self.fbButton];
     ////
-    deadLine = [[UIImageView alloc]initWithFrame:CGRectMake(105, 112 + heightShift, 110, 2)];
+    deadLine = [[UIImageView alloc]initWithFrame:CGRectMake(CGRectGetMidX(self.view.frame) - 55, 112 + heightShift, 110, 2)];
     deadLine.image = [UIImage imageNamed:@"deadline.png"];
     [self.view addSubview:deadLine];
     ////
-    high = [[UILabel alloc]initWithFrame:CGRectMake(105, 127 + heightShift, 75, 26)];
+    high = [[UILabel alloc]initWithFrame:CGRectMake(CGRectGetMidX(self.view.frame) - 45, 127 + heightShift, 75, 26)];
     [high setFont:[UIFont fontWithName:@"Dense-Regular" size:26]];
     high.textColor = [UIColor whiteColor];
     [high setText:@"HI-SCORE:"];
     [self.view addSubview:high];
-    ////
-    highscore = [[UILabel alloc]initWithFrame:CGRectMake(140, 127 + heightShift, 75, 26)];
+    ////bg.position = CGPointMake(CGRectGetMidX(self.frame),CGRectGetMidY(self.frame));
+    highscore = [[UILabel alloc]initWithFrame:CGRectMake(CGRectGetMidX(self.view.frame) - 29
+                                                         , 127 + heightShift, 75, 26)];
     [highscore setFont:[UIFont fontWithName:@"Dense-Regular" size:26]];
     highscore.textColor = [UIColor whiteColor];
     [highscore setTextAlignment:NSTextAlignmentRight];

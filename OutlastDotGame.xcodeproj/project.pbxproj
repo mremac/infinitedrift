@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07651438206EC9EB00B609F3 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07651437206EC9EB00B609F3 /* Launch Screen.storyboard */; };
 		5B0D6F23197834CB00DEB6A9 /* _mypoints.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 5B0D6F22197834CB00DEB6A9 /* _mypoints.atlas */; };
 		5B16BE67197689B300732F1E /* bg_first.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B16BE65197689B300732F1E /* bg_first.png */; };
 		5B16BE68197689B300732F1E /* bg_first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B16BE66197689B300732F1E /* bg_first@2x.png */; };
@@ -158,6 +159,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07651437206EC9EB00B609F3 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		5B0D6F22197834CB00DEB6A9 /* _mypoints.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = _mypoints.atlas; sourceTree = "<group>"; };
 		5B16BE65197689B300732F1E /* bg_first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_first.png; sourceTree = "<group>"; };
 		5B16BE66197689B300732F1E /* bg_first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_first@2x.png"; sourceTree = "<group>"; };
@@ -334,6 +336,7 @@
 				5B0D6F22197834CB00DEB6A9 /* _mypoints.atlas */,
 				DFF2116819102AA40052C291 /* AppDelegate.h */,
 				DFF2116919102AA40052C291 /* AppDelegate.m */,
+				07651437206EC9EB00B609F3 /* Launch Screen.storyboard */,
 				DFF2116B19102AA40052C291 /* Main_iPhone.storyboard */,
 				DFF2116E19102AA40052C291 /* Main_iPad.storyboard */,
 				5B7E63F219361C5C00DF68D4 /* FirstViewViewController.h */,
@@ -502,6 +505,7 @@
 				TargetAttributes = {
 					DFF2115319102AA40052C291 = {
 						DevelopmentTeam = S7HKE9UJVE;
+						ProvisioningStyle = Automatic;
 					};
 					DFF2117E19102AA40052C291 = {
 						TestTargetID = DFF2115319102AA40052C291;
@@ -578,6 +582,7 @@
 				DFC604BF197D6F6500C955C5 /* baddieR1@2x.png in Resources */,
 				DFD47306196E943C00AA5DD6 /* bt_ready.png in Resources */,
 				DFD47322196E943C00AA5DD6 /* launchImg.png in Resources */,
+				07651438206EC9EB00B609F3 /* Launch Screen.storyboard in Resources */,
 				DFD47318196E943C00AA5DD6 /* deadline@2x.png in Resources */,
 				DFD472DE196E943C00AA5DD6 /* baddie4.png in Resources */,
 				DFD472E2196E943C00AA5DD6 /* baddie5.png in Resources */,
@@ -809,16 +814,19 @@
 		DFF2119119102AA40052C291 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconn;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S7HKE9UJVE;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OutlastDotGame/OutlastDotGame-Prefix.pch";
 				INFOPLIST_FILE = OutlastDotGame/InfiniteDrift.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = InfiniteDrift;
 				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
@@ -829,16 +837,19 @@
 		DFF2119219102AA40052C291 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconn;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S7HKE9UJVE;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OutlastDotGame/OutlastDotGame-Prefix.pch";
 				INFOPLIST_FILE = OutlastDotGame/InfiniteDrift.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PRODUCT_NAME = InfiniteDrift;
-				PROVISIONING_PROFILE = "14752F5C-EC7C-46E3-9A91-EE5D775F676C";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;

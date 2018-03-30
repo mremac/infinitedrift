@@ -64,51 +64,51 @@ int counter = 0;
     float h = self.view.frame.size.height;
     float heightShift = ((h - 430)/138) * 52;
     
-    self.twButton = [[UIButton alloc]initWithFrame:CGRectMake(117, 311 + heightShift, 34, 33)];
+    self.twButton = [[UIButton alloc]initWithFrame:CGRectMake(CGRectGetMidX(self.view.frame) - 38, 311 + heightShift, 34, 33)];
     [self.twButton setBackgroundImage:[UIImage imageNamed:@"bt_twitter@2x.png"] forState:UIControlStateNormal];
     [self.twButton addTarget:self action:@selector(shareTw:) forControlEvents:UIControlEventTouchDown];
     [self.view addSubview:self.twButton];
-    self.fbButton = [[UIButton alloc]initWithFrame:CGRectMake(168, 311 + heightShift, 34, 33)];
+    self.fbButton = [[UIButton alloc]initWithFrame:CGRectMake(CGRectGetMidX(self.view.frame) + 4, 311 + heightShift, 34, 33)];
     [self.fbButton setBackgroundImage:[UIImage imageNamed:@"bt_fbook.png"] forState:UIControlStateNormal];
     [self.fbButton addTarget:self action:@selector(shareFb:) forControlEvents:UIControlEventTouchDown];
     [self.view addSubview:self.fbButton];
     [self.fbButton setHidden:YES];
     [self.twButton setHidden:YES];
     ////
-    deadLine = [[UIImageView alloc]initWithFrame:CGRectMake(105, 254 + heightShift, 110, 2)];
+    deadLine = [[UIImageView alloc]initWithFrame:CGRectMake(CGRectGetMidX(self.view.frame) - 55, 254 + heightShift, 110, 2)];
     deadLine.image = [UIImage imageNamed:@"deadline.png"];
     [self.view addSubview:deadLine];
     [deadLine setHidden:YES];
     ////
-    countLabel = [[UILabel alloc]initWithFrame:CGRectMake(self.view.frame.size.width/2 - 100, 110 + heightShift, 200, 100)];
+    countLabel = [[UILabel alloc]initWithFrame:CGRectMake(CGRectGetMidX(self.view.frame) - 100, 110 + heightShift, 200, 100)];
     [countLabel setTextAlignment:NSTextAlignmentCenter];
     [countLabel setFont:[UIFont fontWithName:@"Dense-Regular" size:100]];
     countLabel.textColor = [UIColor whiteColor];
     [countLabel setHidden:YES];
     [self.view addSubview:countLabel];
     ////
-    deadLabel = [[UILabel alloc]initWithFrame:CGRectMake(105, 270 + heightShift, 75, 26)];
+    deadLabel = [[UILabel alloc]initWithFrame:CGRectMake(CGRectGetMidX(self.view.frame) - 34, 270 + heightShift, 75, 26)];
     [deadLabel setFont:[UIFont fontWithName:@"Dense-Regular" size:26]];
     deadLabel.textColor = [UIColor whiteColor];
     [deadLabel setText:@"SCORE:"];
     [deadLabel setHidden:YES];
     [self.view addSubview:deadLabel];
     ////
-    deadLabelScore = [[UILabel alloc]initWithFrame:CGRectMake(140, 270 + heightShift, 75, 26)];
+    deadLabelScore = [[UILabel alloc]initWithFrame:CGRectMake(CGRectGetMidX(self.view.frame) - 34, 270 + heightShift, 75, 26)];
     [deadLabelScore setFont:[UIFont fontWithName:@"Dense-Regular" size:26]];
     deadLabelScore.textColor = [UIColor whiteColor];
     [deadLabelScore setTextAlignment:NSTextAlignmentRight];
     [deadLabelScore setHidden:YES];
     [self.view addSubview:deadLabelScore];
     ////
-    deadHigh = [[UILabel alloc]initWithFrame:CGRectMake(105, 219 + heightShift, 75, 26)];
+    deadHigh = [[UILabel alloc]initWithFrame:CGRectMake(CGRectGetMidX(self.view.frame) - 45, 219 + heightShift, 75, 26)];
     [deadHigh setFont:[UIFont fontWithName:@"Dense-Regular" size:26]];
     deadHigh.textColor = [UIColor whiteColor];
     [deadHigh setText:@"HI-SCORE:"];
     [deadHigh setHidden:YES];
     [self.view addSubview:deadHigh];
     ////
-    deadHighScore = [[UILabel alloc]initWithFrame:CGRectMake(140, 219 + heightShift, 75, 26)];
+    deadHighScore = [[UILabel alloc]initWithFrame:CGRectMake(CGRectGetMidX(self.view.frame) - 29, 219 + heightShift, 75, 26)];
     [deadHighScore setFont:[UIFont fontWithName:@"Dense-Regular" size:26]];
     deadHighScore.textColor = [UIColor whiteColor];
     [deadHighScore setTextAlignment:NSTextAlignmentRight];
