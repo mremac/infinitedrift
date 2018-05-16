@@ -57,9 +57,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_instructions.png" translatesAutoresizingMaskIntoConstraints="NO" id="uxd-6i-D3K">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_instructions.png" translatesAutoresizingMaskIntoConstraints="NO" id="uxd-6i-D3K">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="instructions.png" translatesAutoresizingMaskIntoConstraints="NO" id="Hp5-aM-A95">
                                 <rect key="frame" x="44" y="81" width="287" height="326"/>
@@ -77,6 +76,12 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.66666668653488159" green="0.66666668653488159" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uxd-6i-D3K" firstAttribute="centerY" secondItem="yvw-dQ-l3r" secondAttribute="centerY" id="C60-a3-ZwL"/>
+                            <constraint firstItem="uxd-6i-D3K" firstAttribute="centerX" secondItem="yvw-dQ-l3r" secondAttribute="centerX" id="CTA-Tn-DJi"/>
+                            <constraint firstItem="uxd-6i-D3K" firstAttribute="leading" secondItem="yvw-dQ-l3r" secondAttribute="leading" id="IWu-pe-pFV"/>
+                            <constraint firstItem="uxd-6i-D3K" firstAttribute="top" secondItem="yvw-dQ-l3r" secondAttribute="top" id="WFX-z0-vkx"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="S6m-3t-1I7"/>
                     <nil key="simulatedTopBarMetrics"/>
@@ -90,7 +95,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dcl-6B-bcr" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Kg5-nk-w7i" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="296" y="741"/>
+            <point key="canvasLocation" x="295.5" y="740.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nFp-b5-ONv">
@@ -126,9 +131,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_first.png" translatesAutoresizingMaskIntoConstraints="NO" id="Fxm-5D-UPQ">
-                                <rect key="frame" x="0.0" y="0.0" width="379" height="673"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_first.png" translatesAutoresizingMaskIntoConstraints="NO" id="Fxm-5D-UPQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iiy-jN-pe3">
                                 <rect key="frame" x="134" y="242" width="111" height="65"/>
@@ -155,8 +159,14 @@
                             <accessibilityTraits key="traits" image="YES"/>
                         </accessibility>
                         <constraints>
+                            <constraint firstItem="Fxm-5D-UPQ" firstAttribute="centerX" secondItem="Hkm-Mi-5sa" secondAttribute="centerX" id="3Ds-KN-4Up"/>
+                            <constraint firstItem="Fxm-5D-UPQ" firstAttribute="leading" secondItem="Hkm-Mi-5sa" secondAttribute="leading" id="5r4-ou-tH8"/>
+                            <constraint firstItem="Fxm-5D-UPQ" firstAttribute="centerY" secondItem="Hkm-Mi-5sa" secondAttribute="centerY" id="IRT-am-qQQ"/>
                             <constraint firstAttribute="centerX" secondItem="ic4-wP-NnF" secondAttribute="centerX" id="ZE3-hy-7An"/>
+                            <constraint firstItem="Fxm-5D-UPQ" firstAttribute="centerY" secondItem="Hkm-Mi-5sa" secondAttribute="centerY" id="bK5-sb-Jip"/>
                             <constraint firstItem="xL5-Sg-FAE" firstAttribute="top" secondItem="ic4-wP-NnF" secondAttribute="bottom" constant="17" id="eg2-iT-mME"/>
+                            <constraint firstItem="Fxm-5D-UPQ" firstAttribute="top" secondItem="Hkm-Mi-5sa" secondAttribute="top" id="gEf-35-ilm"/>
+                            <constraint firstItem="Fxm-5D-UPQ" firstAttribute="centerX" secondItem="Hkm-Mi-5sa" secondAttribute="centerX" id="nl1-nm-Gmn"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4as-k6-bvT"/>
@@ -181,6 +191,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="DpE-Rb-YFj"/>
-        <segue reference="nW4-FE-y1k"/>
+        <segue reference="zd5-fB-q9y"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -2,7 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "1125x2436.png",
+      "filename" : "1125x2436-2.png",
       "scale" : "1x"
     },
     {
@@ -27,7 +27,19 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "1242x2208.png",
+      "filename" : "1125x2436-1.png",
+      "unassigned" : true,
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "1242x2208-1.png",
+      "unassigned" : true,
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "1242x2208-2.png",
       "unassigned" : true,
       "scale" : "1x"
     },
@@ -40,12 +52,6 @@
     {
       "idiom" : "universal",
       "filename" : "1668x2224.png",
-      "unassigned" : true,
-      "scale" : "1x"
-    },
-    {
-      "idiom" : "universal",
-      "filename" : "2048x2732.png",
       "unassigned" : true,
       "scale" : "1x"
     }

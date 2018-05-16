@@ -22,18 +22,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="id_by_bird" translatesAutoresizingMaskIntoConstraints="NO" id="Vse-Xw-a0u">
-                                <rect key="frame" x="0.0" y="-40" width="375" height="747"/>
+                                <rect key="frame" x="0.0" y="-78" width="375" height="823"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="747" id="ZLl-fm-vXb"/>
+                                    <constraint firstAttribute="height" constant="823" id="wjM-Ct-fwA"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Vse-Xw-a0u" secondAttribute="trailing" id="1kO-xp-XnT"/>
+                            <constraint firstItem="Vse-Xw-a0u" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="76E-um-k66"/>
                             <constraint firstItem="Vse-Xw-a0u" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Enh-Nd-sWv"/>
                             <constraint firstItem="Vse-Xw-a0u" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="HcH-PL-dxw"/>
-                            <constraint firstItem="Vse-Xw-a0u" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="vXH-uX-apa"/>
+                            <constraint firstItem="Vse-Xw-a0u" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="c5b-dX-kYn"/>
                         </constraints>
                     </view>
                 </viewController>
